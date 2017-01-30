@@ -1,0 +1,18 @@
+
+
+/*Header*/
+#header {
+			background-image:url(../../../Images/Header-2.JPG); 
+ 			background-size: cover;
+			height:auto;
+			padding: 100px;
+			margin:0 auto;
+			width:100%;
+			}
+			
+#header h3 {
+	color: white;
+	font-size: 40px;
+	}	
+
+#header h1 {font-size: 60px;}

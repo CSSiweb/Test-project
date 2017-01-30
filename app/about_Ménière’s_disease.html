@@ -3,24 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="google-site-verification" content="AQjghTUyYE9WeVktWrnd7ogISf5ffoRNhSyJZ4F0CaE" />
+
 <!--  Internet Explorer edge 10, 9, 8, 7-->
 <meta http-equiv="X-UA-Compatible" content="IE=10; IE=9; IE=8; IE=7; IE=EDGE" >
 <!--  Viewport-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
 <meta name="Description" content="Dizziness? Vertigo? Nausea? Hearing Loss? Ringing? Do You Have Meniere’s Disease?" />
 
 <meta name="keywords" content="" />
 
-<!--  css -->
-<link rel="stylesheet" type="text/css" href="Fonts/Fonts.css">
-<link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
+<!--css-->
 
-
- <!-- script -->
-<script type="text/javascript" src="jquery-1.10.2.js"></script>
+<link rel="stylesheet" type="text/css" href="Fonts/Fonts.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="Styles/Styles.css" />
 
 <!-- URL Tracking script -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"> </script>
@@ -44,15 +41,6 @@
 
 </script>
 
-
-<!-- URL Tracking script -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"> </script>
-    <script type="text/javascript" src="js/WebSourseScripts.js"></script> 
-     <script type="text/javascript">
-          $(document).on("pageload", getAllHref());
-           $(document.body).css("visibility", "hidden");
-      </script>
-
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -60,20 +48,17 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-
-
 </head>
 
 <body onload="getAllHref();">
 
-<section>
+<div id="container">
 
-<div id="header">
+<div id="header" class="container-fluid">
 	<h1 class="text-center">Do You Have Meniere’s Disease?</h1>
     <h3 id="demo5">Dizziness? Vertigo? Nausea? Hearing Loss? Ringing?</h3>
 </div>
-<div id="container" class="body-container">
+
       <!-- Static navbar -->
       <nav class="navbar">
         <div class="container-fluid">
@@ -88,8 +73,8 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              	<li class="active"><a href="index.html">Home</a></li>
-     			<li><a href="about_Ménière’s_disease.html">About Ménière’s Disease</a></li> 
+             	<li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about_Ménière’s_disease.html">About Ménière’s Disease</a></li> 
                 <li><a class="active" href="about.html">About the Study</a></li> 
                 <li><a href="locations.html">Participating Site Information </a></li>
                 <li><a href="faq.html">FAQs</a></li>
@@ -99,32 +84,41 @@
       </nav><!-- /.Static navbar -->
 
     
-   <div id="content">
-    <h1>Welcome to the Ménière’s Disease Study website!</h1>
+    <div id="body">
+    <h1>What is Ménière’s disease?</h1>
     
-    <p>Do you feel the room spinning around you?  Are you sometimes dizzy?  Do you have ringing in your ears, nausea, or hearing problems?</p>
-    <p>If you or someone you know has Ménière’s disease, you may qualify for a clinical study to evaluate an investigational drug that may reduce the symptoms you experience.  </p>
-    <p>About 60-70 doctors in the US are now evaluating an investigational drug to see if it reduces the vertigo that Ménière’s patients endure.  The investigational drug is called OTO-104 and is a long acting gel that patients get one time during the study. </p>
-	<p>Learn more about Ménière’s disease and ﬁnd out if you or someone you know might prequalify for this Ménière’s Disease Study!  For more information and to see if you may qualify, call 888-205-5801 or <a href="#myModal" data-toggle="modal" data-target="#myModal">click here to see if you may qualify!</a></p>
+    <p>For more information and to see if you may qualify, call 888-205-5801 or <a href="#myModal" data-toggle="modal" data-target="#myModal">click here to see if you may qualify!</a></p>
+    <p>Ménière’s disease is a disorder of the inner ear that can affect balance and hearing. People suffering from Ménière’s disease experience a variety of symptoms that may come and go.  
+   <strong>Some of these are:</strong> </p>
+    	<ul>
+    		<li>Dizziness</li>
+            <li>Vertigo (a feeling that your surroundings are moving when there is no actual movement)</li>
+            <li>Nausea</li>
+            <li>Tinnitus (roaring, humming or ringing sounds in your ears)</li>
+            <li>Fullness, pressure and pain in the ears</li>
+            <li>Hearing loss</li>
+   		 </ul>
+    
+    <p>Episodes of vertigo are considered the most prominent symptom, often lasting at least 20 minutes.  People with Ménière’s disease ﬁnd the symptoms they experience may interfere with their activities of daily lives.  Currently, there is no cure for Ménière’s disease. </p>
+   
     
     </div>
-    
-<!--Footer-->
-<footer id="footer_container" class="container-fluid">    
-    <div id="footer" class="row">
+<!--footer-->
+	<div id="footer_container">    
+    <div id="footer">
    	
-    <div class="col-lg-12">
-   &copy; <script language="JavaScript" type="text/javascript">document.write((new Date()).getFullYear());</script> <a href="http://www.cssienroll.com/">CSSi</a> |
+    <ul>
+   	<li style="padding:0 5px 0 0;">&copy; <script language="JavaScript" type="text/javascript">document.write((new Date()).getFullYear());</script> <a href="http://www.cssienroll.com/">CSSi</a>
+    </li> 
+   	<li> <a href="http://cssienroll.com/privacy-policy.html" target="_blank">Privacy Policy</a></li> &#124; 
+    <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul>
    
-   	 <a href="http://cssienroll.com/privacy-policy.html" target="_blank">Privacy Policy</a> |
-    <a href="disclaimer.html">Disclaimer</a>
     </div>
-   
     </div>
-    </footer>
-  
+    
 <!--Form-->
-
+   
 <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -143,8 +137,8 @@
 </div><!-- /.modal -->
 
 <!--Form ends-->
-	</div><!-- /Id-Container -->
-</section>
+
+</div>
 
 <!--Javascript - Jquery -->
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -200,7 +194,7 @@
 		$("#fittext3").fitText(1.1, { minFontSize: '50px', maxFontSize: '75px' });
 	</script>
    
-   
+
 <!-- URL Tracking -->
 
 <script>
@@ -208,9 +202,6 @@
        //body visibility set back to 'visible' on the data-show method of the first view, home.
          $(document.body).css("visibility", "visible");
 </script> 
- 
- 
-
 
 </body>
 </html>

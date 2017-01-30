@@ -3,24 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="google-site-verification" content="AQjghTUyYE9WeVktWrnd7ogISf5ffoRNhSyJZ4F0CaE" />
+
 <!--  Internet Explorer edge 10, 9, 8, 7-->
 <meta http-equiv="X-UA-Compatible" content="IE=10; IE=9; IE=8; IE=7; IE=EDGE" >
 <!--  Viewport-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
 <meta name="Description" content="Dizziness? Vertigo? Nausea? Hearing Loss? Ringing? Do You Have Meniere’s Disease?" />
 
 <meta name="keywords" content="" />
 
-<!--  css -->
-<link rel="stylesheet" type="text/css" href="Fonts/Fonts.css">
-<link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
+<!--css-->
 
-
- <!-- script -->
-<script type="text/javascript" src="jquery-1.10.2.js"></script>
+<link rel="stylesheet" type="text/css" href="Fonts/Fonts.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="Styles/Styles.css" />
 
 <!-- URL Tracking script -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"> </script>
@@ -29,6 +26,10 @@
           $(document).on("pageload", getAllHref());
            $(document.body).css("visibility", "hidden");
       </script>
+
+<script src="SpryAssets/SpryAccordion.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryAccordion.css" rel="stylesheet" type="text/css" />
+
 
 <title>Meniere’s Disease Study</title>
 
@@ -44,14 +45,7 @@
 
 </script>
 
-
-<!-- URL Tracking script -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"> </script>
-    <script type="text/javascript" src="js/WebSourseScripts.js"></script> 
-     <script type="text/javascript">
-          $(document).on("pageload", getAllHref());
-           $(document.body).css("visibility", "hidden");
-      </script>
+</head>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -60,20 +54,15 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-
-
-</head>
-
 <body onload="getAllHref();">
 
-<section>
+<div id="container">
 
-<div id="header">
+<div id="header" class="container-fluid">
 	<h1 class="text-center">Do You Have Meniere’s Disease?</h1>
     <h3 id="demo5">Dizziness? Vertigo? Nausea? Hearing Loss? Ringing?</h3>
 </div>
-<div id="container" class="body-container">
+
       <!-- Static navbar -->
       <nav class="navbar">
         <div class="container-fluid">
@@ -88,7 +77,7 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              	<li class="active"><a href="index.html">Home</a></li>
+             	<li class="active"><a href="index.html">Home</a></li>
      			<li><a href="about_Ménière’s_disease.html">About Ménière’s Disease</a></li> 
                 <li><a class="active" href="about.html">About the Study</a></li> 
                 <li><a href="locations.html">Participating Site Information </a></li>
@@ -99,32 +88,74 @@
       </nav><!-- /.Static navbar -->
 
     
-   <div id="content">
-    <h1>Welcome to the Ménière’s Disease Study website!</h1>
+    <div id="body">
+    <h1>Participating Doctor’s Offices</h1>
     
-    <p>Do you feel the room spinning around you?  Are you sometimes dizzy?  Do you have ringing in your ears, nausea, or hearing problems?</p>
-    <p>If you or someone you know has Ménière’s disease, you may qualify for a clinical study to evaluate an investigational drug that may reduce the symptoms you experience.  </p>
-    <p>About 60-70 doctors in the US are now evaluating an investigational drug to see if it reduces the vertigo that Ménière’s patients endure.  The investigational drug is called OTO-104 and is a long acting gel that patients get one time during the study. </p>
-	<p>Learn more about Ménière’s disease and ﬁnd out if you or someone you know might prequalify for this Ménière’s Disease Study!  For more information and to see if you may qualify, call 888-205-5801 or <a href="#myModal" data-toggle="modal" data-target="#myModal">click here to see if you may qualify!</a></p>
+    <p>Thank you for your interest in the Ménière’s Disease Study.  For more information and to see if you may qualify, call 888-205-5801 or <a href="#myModal" data-toggle="modal" data-target="#myModal">click here to see if you may qualify!</a></p>
+    <p>The following doctors’ ofﬁces are currently participating in this clinical study:</p>
     
-    </div>
-    
-<!--Footer-->
-<footer id="footer_container" class="container-fluid">    
-    <div id="footer" class="row">
-   	
-    <div class="col-lg-12">
-   &copy; <script language="JavaScript" type="text/javascript">document.write((new Date()).getFullYear());</script> <a href="http://www.cssienroll.com/">CSSi</a> |
-   
-   	 <a href="http://cssienroll.com/privacy-policy.html" target="_blank">Privacy Policy</a> |
-    <a href="disclaimer.html">Disclaimer</a>
-    </div>
-   
-    </div>
-    </footer>
-  
-<!--Form-->
+    <iframe src="https://batchgeo.com/map/9a791fb25a6aa384a8b3982a53d4b51e" frameborder="0" width="100%" height="550"></iframe>
+    <br /><br />
+    <p><small> <a href="https://batchgeo.com/map/9a791fb25a6aa384a8b3982a53d4b51e">Ménière’s study locations</a> </small></p>
 
+    <ul>
+   		<li style="display:block;"> Dr. Ansley, Carolina Ear, Nose and Throat Center, Orangeburg, SC</li>
+        <li style="display:block;"> Dr. Maxwell, Piedmont Ear, Nose, and Throat Associates, Winston Salem, NC</li>
+        <li style="display:block;"> Dr. Moss, Charlotte Eye, Ear, Nose, Throat Associates, Matthews, NC</li>
+        <li style="display:block;"> Dr. Van Cleeff, PMG Research of Cary, Cary, NC</li>
+        <li style="display:block;"> Dr. Gold, Charlotte Eye, Ear, Nose, Throat Associates, Charlotte, NC</li>
+        <li style="display:block;"> Dr. Zwack, PMG Research of Wilmington, Wilmington, NC</li>
+        <li style="display:block;"> Dr. Welsh, Advanced ENT and Allergy, Louisville, KY</li>
+        <li style="display:block;"> Dr. Orbert, Alabama Clinical Therapeutics, Inc, Birmingham, AL</li>        
+        <li style="display:block;"> Dr. Widick, Ear Nose and Throat Associates of South Florida - Boca Raton, Boca Rotan, FL</li>
+        <li style="display:block;"> Dr. Silverstein, Silverstein Institute, Sarasota, FL</li>
+        <li style="display:block;"> Dr. Light, Ear Nose and Throat Associates of South Florida, Boynton Beach, FL</li>
+        <li style="display:block;"> Dr. McKennan, Sacramento ENT, Sacramento, CA</li>
+        <li style="display:block;"> Dr. Miller, Intermountain Ear Nose & Throat Specialist, Salt Lake City, UT</li>
+        <li style="display:block;"> Dr. Bennion, Bridgerland Clinical Research, North Logan, UT</li>
+        <li style="display:block;"> Dr. Major, Advanced Research Institute, Ogden, UT</li>
+        <li style="display:block;"> Dr. Lanier, Central California ENT Medical Group, Fresno, CA</li>
+        <li style="display:block;"> Dr. Romett, Colorado ENT & Allergy, Colorado Springs, CO</li>
+        <li style="display:block;"> Dr. Strasnick, EVMS Otolaryngology, Norfolk, VA</li>
+        <li style="display:block;"> Dr. Zhang, Dent Neurologic Institute, Amherst, NY</li>
+        <li style="display:block;"> Dr. Hammerschlag, NYU School of Medicine, New York, NY</li>
+        <li style="display:block;"> Dr. Weber, New York Eye and Ear Infirmary of Mount Sinai, New York, NY</li>
+        <li style="display:block;"> Dr. Steiniger, Spartanburg and Greer ENT, Spartanburg, SC</li>
+        <li style="display:block;"> Dr. Joel Norris, Clinical Trials of America LA, LLC, Monroe, LA </li>
+        <li style="display:block;"> Dr. Paul Lambert, Dept. of Otolaryngology, Head & Neck Surgery Medical University of South Carolina, Charleston, SC</li>
+        <li style="display:block;"> Dr. Anil Lalwani, Columbia University Medical Center, NewYork, NY</li>
+        <li style="display:block;"> Dr. Anthony Mikulec, SLUCare Physician Group - Dept. of Otolaryngology - Head & Neck Surgery, St. Louis, MO </li>
+        <li style="display:block;"> Dr. Patrick J. Antonelli, M.D, Department of Otolaryngology, University of Florida, Gainesville, FL </li>
+        <li style="display:block;"> Dr. Walter Kutz, SouthWestern Medical Center, Dept. of Otolaryngology – Head & Neck Surgery, Dallas, TX </li>
+        <li style="display:block;"> Dr. Ravi Samy, UC Health Otolaryngology-Head and Neck Surgery, Medical Sciences Bldg, Cincinnati, OH  </li>
+        <li style="display:block;"> Dr. Stephen Cass, University of Colorado School of Medicine, Dept. of Otolaryngology, Aurora, CO </li>
+        <li style="display:block;"> Dr. Arnaldo Rivera, University of Missouri Health System - University Hospitals and Clinics, Columbia, MO</li>
+        <li style="display:block;"> Dr. Andrea Vambutas, Long Island Jewish Medical Center - Hearing and Speech Center, New Hyde Park, NY </li>
+        <li style="display:block;"> Dr. Dale Ehmer, ENT Associates Texas, McKinney, TX</li>
+        <li style="display:block;"> Dr. Brian Peters, Dallas Ear Institute, Dallas, TX </li>
+        <li style="display:block;"> Dr. Brian Nicholas, Upstate Medical University, Syracuse, NY</li>
+        <li style="display:block;"> Dr. Carol Bauer, Southern Illinois University School of Medicine, Springfield, IL</li>
+        <li style="display:block;"> Dr. Stephen Wetmore, WVU Clinical Trials Research Unit, Morgantown, WV</li>
+        <li style="display:block;"> Dr. Benjamin Crane, The University of Rochester, Rochester, NY</li>
+        <li style="display:block;"> Dr. Jeff Kim, Dept. of Otolaryngology - Georgetown University Hospital, Washington, DC</li>
+    </ul>
+    </div>
+<!--footer-->
+	<div id="footer_container">    
+    <div id="footer">
+   	
+    <ul>
+   	<li style="padding:0 5px 0 0;">&copy; <script language="JavaScript" type="text/javascript">document.write((new Date()).getFullYear());</script> <a href="http://www.cssienroll.com/">CSSi</a>
+    </li> 
+   	<li> <a href="http://cssienroll.com/privacy-policy.html" target="_blank">Privacy Policy</a></li> &#124; 
+    <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul>
+   
+    </div>
+    </div>
+    
+<!--Form-->
+   
 <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -143,8 +174,8 @@
 </div><!-- /.modal -->
 
 <!--Form ends-->
-	</div><!-- /Id-Container -->
-</section>
+
+</div>
 
 <!--Javascript - Jquery -->
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -158,6 +189,7 @@
 <!-- JS - Bootstrap -->
 
 <script type="text/javascript" src="js/bootstrap.js"></script>
+
 
 <!-- JS - Curve Text -->
    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -200,7 +232,6 @@
 		$("#fittext3").fitText(1.1, { minFontSize: '50px', maxFontSize: '75px' });
 	</script>
    
-   
 <!-- URL Tracking -->
 
 <script>
@@ -208,8 +239,6 @@
        //body visibility set back to 'visible' on the data-show method of the first view, home.
          $(document.body).css("visibility", "visible");
 </script> 
- 
- 
 
 
 </body>

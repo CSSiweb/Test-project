@@ -1,9 +1,23 @@
-body { 
-	font-family: 'Roboto', sans-serif;
-	color: #333;
+html { background-color: white;}
+
+body {background:#F5F5F5; margin:0; padding:0;}
+
+#container {background-color:#FFFFFF; margin:0 auto; padding:0; position:relative; width:1024px;}
+
+#content {
+	padding: 4rem;
+	
 }
 
-img {
-	max-width: 100%;
-	height: auto; 
+h1 {
+	font-family: 'CreteRound-Regular', Arial, sans-serif;
+	color: $mainBlue;
+}
+
+p {
+	line-height: 3rem;
+	font-size: 2rem;
+	font-size: 100;
+	padding: 0 3rem;
+	
 }
